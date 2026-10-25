@@ -63,7 +63,7 @@ def security_asset_scanner():
                 }
                                     
                 data_to_csv.append(row)
-                #print(f"[FOUND] Key: '{check}' | Tag: <{tag.name}> | URL: {absolute_link}")
+                print(f"[FOUND] Key: '{check}' | Tag: <{tag.name}> | URL: {absolute_link}")
     if args.export_to_csv and data_to_csv:
         try:
             with open(filename, 'w', newline='') as csvfile:
